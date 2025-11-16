@@ -1,3 +1,5 @@
+from typing import Any
+
 from config import config
 from src.class_for_bd import DBManager
 from src.create_add_to_bd import create_database, save_data_to_database

@@ -3,7 +3,7 @@ from typing import Any
 import psycopg2
 
 
-def create_database(database_name: str, params: dict):
+def create_database(database_name: str, params: dict) -> None:
     """Создание базы данных и таблиц для сохранения данных о работодателях и вакансиях"""
 
     conn = psycopg2.connect(dbname="postgres", **params)
@@ -49,7 +49,7 @@ def create_database(database_name: str, params: dict):
     conn.close()
 
 
-def save_data_to_database(data: list[dict[str, Any]], database_name: str, params: dict):
+def save_data_to_database(data: list[dict[str, Any]], database_name: str, params: dict) -> None:
     """Сохранение данных о работодателях и вакансиях в базу данных."""
     conn = psycopg2.connect(dbname=database_name, **params)
 

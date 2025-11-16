@@ -17,14 +17,14 @@ class DBManager:
         self.conn_params = {"dbname": dbname, "user": user, "password": password, "host": host, "port": port}
         self.conn = None
 
-    def connect(self):
+    def connect(self) -> None:
         """Устанавливает соединение с БД."""
         try:
             self.conn = psycopg2.connect(**self.conn_params)
         except psycopg2.Error as e:
             raise ConnectionError(f"Ошибка подключения к БД: {e}")
 
-    def close(self):
+    def close(self) -> None:
         """Закрывает соединение с БД."""
         if self.conn:
             self.conn.close()
