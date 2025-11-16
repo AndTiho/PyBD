@@ -1,5 +1,3 @@
-import os
-
 from config import config
 from src.class_for_bd import DBManager
 from src.create_add_to_bd import create_database, save_data_to_database
@@ -22,35 +20,36 @@ def main():
 
     params = config()
 
-    # data = get_hh_data(employer_ids)
-    # create_database('hh_data', params)
-    # save_data_to_database(data, 'hh_data', params)
+    data = get_hh_data(employer_ids)
+    create_database("hh_data", params)
+    save_data_to_database(data, "hh_data", params)
 
     # Инициализация
-    db = DBManager('hh_data', **params)
+    db = DBManager("hh_data", **params)
 
-
-    print("Вас приветствует программа работы с вакансиями\nВыберете действие:" )
-    user_input = input('''
+    print("Вас приветствует программа работы с вакансиями\nВыберете действие:")
+    user_input = input(
+        """
     1.Перечень всех компаний и кол-во вакансий
     2.Перечень всех вакансий
     3.Средняя зарплата
     4.Перечень вакансий c З/П выше среднего по таблице
     5.Вакансии с искомым словом
-    ''')
+    """
+    )
     # Получение данных
-    if user_input == '1':
+    if user_input == "1":
         companies = db.get_companies_and_vacancies_count()
-        print('Перечень всех компаний и кол-во вакансий:')
+        print("Перечень всех компаний и кол-во вакансий:")
         for row in companies:
             company, number = row
             print(f"Компания: {company}")
             print(f"Количество вакансий: {number}")
             print("-" * 50)  # разделитель между вакансиями
 
-    elif user_input == '2':
+    elif user_input == "2":
         all_vacancies = db.get_all_vacancies()
-        print('Перечень всех вакансий')
+        print("Перечень всех вакансий")
         for row in all_vacancies:
             company, job, salary_from, salary_to, currency, url = row
             print(f"Компания: {company}")
@@ -59,13 +58,13 @@ def main():
             print(f"Ссылка: {url or 'нет ссылки'}")
             print("-" * 50)  # разделитель между вакансиями
 
-    elif user_input == '3':
+    elif user_input == "3":
         avg_salary = db.get_avg_salary()
-        print(f'Средняя зарплата: {round(avg_salary, 2)}\n')
+        print(f"Средняя зарплата: {round(avg_salary, 2)}\n")
 
-    elif user_input == '4':
+    elif user_input == "4":
         high_salary_vacancies = db.get_vacancies_with_higher_salary()
-        print('Перечень вакансий c З/П выше среднего по таблице')
+        print("Перечень вакансий c З/П выше среднего по таблице")
         for row in high_salary_vacancies:
             company, job, salary_from, salary_to, currency, url = row
             print(f"Компания: {company}")
@@ -74,10 +73,10 @@ def main():
             print(f"Ссылка: {url or 'нет ссылки'}")
             print("-" * 50)  # разделитель между вакансиями
 
-    elif user_input == '5':
+    elif user_input == "5":
         keyword = input('Введите искомое слово( рекомендуем "продажам" ): ')
         python_vacancies = db.get_vacancies_with_keyword(keyword)
-        print('Вакансии с искомым словом:')
+        print("Вакансии с искомым словом:")
         for row in python_vacancies:
             company, job, salary_from, salary_to, currency, url = row
             print(f"Компания: {company}")
@@ -90,6 +89,7 @@ def main():
 
     # Закрытие соединения
     db.close()
+
 
 if __name__ == "__main__":
     main()

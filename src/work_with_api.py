@@ -1,6 +1,8 @@
 import time
-from typing import List, Dict, Any
+from typing import Any, Dict, List
+
 import requests
+
 
 def get_hh_data(employer_ids: List[str]) -> List[Dict[str, Any]]:
     """Получение данных о работодателях и их вакансиях с HH.ru"""

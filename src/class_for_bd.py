@@ -1,5 +1,6 @@
+from typing import List, Optional, Tuple
+
 import psycopg2
-from typing import List, Tuple, Optional
 
 
 class DBManager:
@@ -13,13 +14,7 @@ class DBManager:
         :param host: хост (по умолчанию localhost)
         :param port: порт (по умолчанию 5432)
         """
-        self.conn_params = {
-            'dbname': dbname,
-            'user': user,
-            'password': password,
-            'host': host,
-            'port': port
-        }
+        self.conn_params = {"dbname": dbname, "user": user, "password": password, "host": host, "port": port}
         self.conn = None
 
     def connect(self):
@@ -44,7 +39,8 @@ class DBManager:
             self.connect()
 
         with self.conn.cursor() as cur:
-            cur.execute("""
+            cur.execute(
+                """
             SELECT
                 e.name AS company_name,
                 COUNT(v.vacancy_id) AS vacancies_count
@@ -52,7 +48,8 @@ class DBManager:
             LEFT JOIN vacancies v ON e.employer_id = v.employer_id
             GROUP BY e.name
             ORDER BY vacancies_count DESC
-            """)
+            """
+            )
             return cur.fetchall()
 
     def get_all_vacancies(self) -> List[Tuple[str, str, Optional[float], Optional[float], Optional[str], str]]:
@@ -71,7 +68,8 @@ class DBManager:
             self.connect()
 
         with self.conn.cursor() as cur:
-            cur.execute("""
+            cur.execute(
+                """
             SELECT
                 e.name AS company_name,
                 v.name AS vacancy_name,
@@ -82,7 +80,8 @@ class DBManager:
             FROM vacancies v
             JOIN employers e ON v.employer_id = e.employer_id
             ORDER BY v.vacancy_id
-            """)
+            """
+            )
             return cur.fetchall()
 
     def get_avg_salary(self) -> float:
@@ -96,9 +95,11 @@ class DBManager:
             self.connect()
 
         with self.conn.cursor() as cur:
-            cur.execute("""
+            cur.execute(
+                """
             SELECT AVG(salary_from) FROM vacancies WHERE salary_from IS NOT NULL
-            """)
+            """
+            )
             result = cur.fetchone()
             return float(result[0]) if result[0] is not None else 0.0
 
@@ -114,7 +115,8 @@ class DBManager:
         avg_salary = self.get_avg_salary()
 
         with self.conn.cursor() as cur:
-            cur.execute("""
+            cur.execute(
+                """
             SELECT
                 e.name AS company_name,
                 v.name AS vacancy_name,
@@ -126,7 +128,9 @@ class DBManager:
             JOIN employers e ON v.employer_id = e.employer_id
             WHERE v.salary_from > %s
             ORDER BY v.salary_from DESC
-            """, (avg_salary,))
+            """,
+                (avg_salary,),
+            )
             return cur.fetchall()
 
     def get_vacancies_with_keyword(self, keyword: str) -> List[Tuple]:
@@ -142,7 +146,8 @@ class DBManager:
         search_pattern = f"%{keyword}%"
 
         with self.conn.cursor() as cur:
-            cur.execute("""
+            cur.execute(
+                """
             SELECT
                 e.name AS company_name,
                 v.name AS vacancy_name,
@@ -154,5 +159,7 @@ class DBManager:
             JOIN employers e ON v.employer_id = e.employer_id
             WHERE LOWER(v.name) LIKE LOWER(%s)
             ORDER BY v.vacancy_id
-            """, (search_pattern,))
+            """,
+                (search_pattern,),
+            )
             return cur.fetchall()
