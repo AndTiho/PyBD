@@ -1,7 +1,8 @@
 import os
 
-from src.utils import get_hh_data, create_database, save_data_to_database
 from config import config
+from src.create_add_to_bd import create_database, save_data_to_database
+from src.work_with_api import get_hh_data
 
 
 def main():
