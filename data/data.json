@@ -1,0 +1,640 @@
+[
+  {
+    "employer": {
+      'id': '4910000',
+      'trusted': True,
+      'accredited_it_employer': False,
+      'has_divisions': False,
+      'name': 'Евразия',
+      'type': 'company',
+      'description': '<h2><strong>ТРАНСПОРТНАЯ КОМПАНИЯ\xa0ДОСТАВКА ГРУЗОВ ПО РОССИИ\xa0</strong><br />Мы ведем профессиональную деятельность по перевозке грузов и логистике с 2006 года. Перевозка отдельных и\xa0сборных грузов по России.</h2>',
+      'site_url': 'https://tk-eurasia.ru/',
+      'alternate_url': 'https://hh.ru/employer/4910000',
+      'vacancies_url': 'https://api.hh.ru/vacancies?employer_id=4910000',
+      'logo_urls': {
+        '240': 'https://img.hhcdn.ru/employer-logo/3541700.png',
+        '90': 'https://img.hhcdn.ru/employer-logo/3541699.png',
+        'original': 'https://img.hhcdn.ru/employer-logo-original/775202.jpg'
+      },
+      'relations': [],
+      'area': {
+        'id': '66',
+        'name': 'Нижний Новгород',
+        'url': 'https://api.hh.ru/areas/66'
+      },
+      'country_code': 'RU',
+      'industries': [],
+      'branded_description': None,
+      'branding': None,
+      'insider_interviews': [],
+      'open_vacancies': 2
+    },
+    "vacancies": [
+      {
+        'id': '127152064',
+        'premium': False,
+        'name': 'Логист/Менеджер по транспортной логистике',
+        'department': None,
+        'has_test': False,
+        'response_letter_required': False,
+        'area': {
+          'id': '66',
+          'name': 'Нижний Новгород',
+          'url': 'https://api.hh.ru/areas/66'
+        },
+        'salary': None,
+        'salary_range': None,
+        'type': {
+          'id': 'open',
+          'name': 'Открытая'
+        },
+        'address': {
+          'city': 'Нижний Новгород',
+          'street': 'улица Стрелка',
+          'building': '4А',
+          'lat': 56.331698,
+          'lng': 43.968158,
+          'description': None,
+          'raw': 'Нижний Новгород, улица Стрелка, 4А',
+          'metro': {
+            'station_name': 'Горьковская',
+            'line_name': 'Автозаводская',
+            'station_id': '50.278',
+            'line_id': '50',
+            'lat': 56.313933,
+            'lng': 43.99482
+          },
+          'metro_stations': [
+            {
+              'station_name': 'Горьковская',
+              'line_name': 'Автозаводская',
+              'station_id': '50.278',
+              'line_id': '50',
+              'lat': 56.313933,
+              'lng': 43.99482
+            },
+            {
+              'station_name': 'Московская',
+              'line_name': 'Автозаводская',
+              'station_id': '50.279',
+              'line_id': '50',
+              'lat': 56.321097,
+              'lng': 43.945799
+            },
+            {
+              'station_name': 'Московская',
+              'line_name': 'Сормовская',
+              'station_id': '51.289',
+              'line_id': '51',
+              'lat': 56.321097,
+              'lng': 43.945799
+            },
+            {
+              'station_name': 'Стрелка',
+              'line_name': 'Сормовская',
+              'station_id': '51.606',
+              'line_id': '51',
+              'lat': 56.3343,
+              'lng': 43.9597
+            }
+          ],
+          'id': '20285144'
+        },
+        'response_url': None,
+        'sort_point_distance': None,
+        'published_at': '2025-10-30T15:19:01+0300',
+        'created_at': '2025-10-30T15:19:01+0300',
+        'archived': False,
+        'apply_alternate_url': 'https://hh.ru/applicant/vacancy_response?vacancyId=127152064',
+        'show_logo_in_search': None,
+        'show_contacts': True,
+        'insider_interview': None,
+        'url': 'https://api.hh.ru/vacancies/127152064?host=hh.ru',
+        'alternate_url': 'https://hh.ru/vacancy/127152064',
+        'relations': [],
+        'employer': {
+          'id': '4910000',
+          'name': 'Евразия',
+          'url': 'https://api.hh.ru/employers/4910000',
+          'alternate_url': 'https://hh.ru/employer/4910000',
+          'logo_urls': {
+            'original': 'https://img.hhcdn.ru/employer-logo-original/775202.jpg',
+            '90': 'https://img.hhcdn.ru/employer-logo/3541699.png',
+            '240': 'https://img.hhcdn.ru/employer-logo/3541700.png'
+          },
+          'vacancies_url': 'https://api.hh.ru/vacancies?employer_id=4910000',
+          'country_id': 1,
+          'accredited_it_employer': False,
+          'trusted': True
+        },
+        'snippet': {
+          'requirement': 'Опыт работы в сфере логистики. Наработанная база. Знание ПК, Мiсrоsоft Offiсе. Чёткая, грамотная речь. Умение работать в режиме многозадачности. Стрeсcoустoйчивocть. ',
+          'responsibility': 'Прием и обработка заявок на перевозку груза от заказчика. Поиск транспорта через АТИ для заключения договор-заявoк нa оказание транспортных...'
+        },
+        'contacts': None,
+        'schedule': {
+          'id': 'fullDay',
+          'name': 'Полный день'
+        },
+        'working_days': [],
+        'working_time_intervals': [],
+        'working_time_modes': [],
+        'accept_temporary': False,
+        'fly_in_fly_out_duration': [],
+        'work_format': [
+          {
+            'id': 'ON_SITE',
+            'name': 'На\xa0месте работодателя'
+          }
+        ],
+        'working_hours': [
+          {
+            'id': 'HOURS_8',
+            'name': '8\xa0часов'
+          }
+        ],
+        'work_schedule_by_days': [
+          {
+            'id': 'FIVE_ON_TWO_OFF',
+            'name': '5/2'
+          }
+        ],
+        'night_shifts': False,
+        'professional_roles': [
+          {
+            'id': '67',
+            'name': 'Менеджер по логистике, менеджер по ВЭД'
+          }
+        ],
+        'accept_incomplete_resumes': False,
+        'experience': {
+          'id': 'between1And3',
+          'name': 'От 1 года до 3 лет'
+        },
+        'employment': {
+          'id': 'full',
+          'name': 'Полная занятость'
+        },
+        'employment_form': {
+          'id': 'FULL',
+          'name': 'Полная'
+        },
+        'internship': False,
+        'adv_response_url': None,
+        'is_adv_vacancy': False,
+        'adv_context': None
+      },
+      {
+        'id': '126824420',
+        'premium': False,
+        'name': 'Менеджер по продажам логистических услуг',
+        'department': None,
+        'has_test': False,
+        'response_letter_required': False,
+        'area': {
+          'id': '66',
+          'name': 'Нижний Новгород',
+          'url': 'https://api.hh.ru/areas/66'
+        },
+        'salary': {
+          'from': 80000,
+          'to': None,
+          'currency': 'RUR',
+          'gross': True
+        },
+        'salary_range': {
+          'from': 80000,
+          'to': None,
+          'currency': 'RUR',
+          'gross': True,
+          'mode': {
+            'id': 'MONTH',
+            'name': 'За\xa0месяц'
+          },
+          'frequency': {
+            'id': 'TWICE_PER_MONTH',
+            'name': 'Два раза в\xa0месяц'
+          }
+        },
+        'type': {
+          'id': 'open',
+          'name': 'Открытая'
+        },
+        'address': {
+          'city': 'Нижний Новгород',
+          'street': 'улица Стрелка',
+          'building': '4А',
+          'lat': 56.331743,
+          'lng': 43.968275,
+          'description': None,
+          'raw': 'Нижний Новгород, улица Стрелка, 4А',
+          'metro': {
+            'station_name': 'Стрелка',
+            'line_name': 'Сормовская',
+            'station_id': '51.606',
+            'line_id': '51',
+            'lat': 56.3343,
+            'lng': 43.9597
+          },
+          'metro_stations': [
+            {
+              'station_name': 'Стрелка',
+              'line_name': 'Сормовская',
+              'station_id': '51.606',
+              'line_id': '51',
+              'lat': 56.3343,
+              'lng': 43.9597
+            }
+          ],
+          'id': '4384034'
+        },
+        'response_url': None,
+        'sort_point_distance': None,
+        'published_at': '2025-10-22T14:09:33+0300',
+        'created_at': '2025-10-22T14:09:33+0300',
+        'archived': False,
+        'apply_alternate_url': 'https://hh.ru/applicant/vacancy_response?vacancyId=126824420',
+        'show_logo_in_search': None,
+        'show_contacts': True,
+        'insider_interview': None,
+        'url': 'https://api.hh.ru/vacancies/126824420?host=hh.ru',
+        'alternate_url': 'https://hh.ru/vacancy/126824420',
+        'relations': [],
+        'employer': {
+          'id': '4910000',
+          'name': 'Евразия',
+          'url': 'https://api.hh.ru/employers/4910000',
+          'alternate_url': 'https://hh.ru/employer/4910000',
+          'logo_urls': {
+            'original': 'https://img.hhcdn.ru/employer-logo-original/775202.jpg',
+            '90': 'https://img.hhcdn.ru/employer-logo/3541699.png',
+            '240': 'https://img.hhcdn.ru/employer-logo/3541700.png'
+          },
+          'vacancies_url': 'https://api.hh.ru/vacancies?employer_id=4910000',
+          'country_id': 1,
+          'accredited_it_employer': False,
+          'trusted': True
+        },
+        'snippet': {
+          'requirement': 'Опыт работы в сфере продажах. Активность и инициативность. Умение вести переговоры, владение навыками убеждения. Умение самостоятельно организовывать свою работу. ',
+          'responsibility': 'Поиск и привлечение новых клиентов. Проведение телефонных переговоров и встреч. Информирование и консультирование клиентов по продуктам и услугам компании. '
+        },
+        'contacts': None,
+        'schedule': {
+          'id': 'fullDay',
+          'name': 'Полный день'
+        },
+        'working_days': [],
+        'working_time_intervals': [],
+        'working_time_modes': [],
+        'accept_temporary': False,
+        'fly_in_fly_out_duration': [],
+        'work_format': [
+          {
+            'id': 'ON_SITE',
+            'name': 'На\xa0месте работодателя'
+          }
+        ],
+        'working_hours': [
+          {
+            'id': 'HOURS_7',
+            'name': '7 часов'
+          }
+        ],
+        'work_schedule_by_days': [
+          {
+            'id': 'FIVE_ON_TWO_OFF',
+            'name': '5/2'
+          }
+        ],
+        'night_shifts': False,
+        'professional_roles': [
+          {
+            'id': '70',
+            'name': 'Менеджер по продажам, менеджер по работе с клиентами'
+          }
+        ],
+        'accept_incomplete_resumes': False,
+        'experience': {
+          'id': 'between1And3',
+          'name': 'От 1 года до 3 лет'
+        },
+        'employment': {
+          'id': 'full',
+          'name': 'Полная занятость'
+        },
+        'employment_form': {
+          'id': 'FULL',
+          'name': 'Полная'
+        },
+        'internship': False,
+        'adv_response_url': None,
+        'is_adv_vacancy': False,
+        'adv_context': None
+      }
+    ]
+  },
+  {
+    "employer": {
+      'id': '1807902',
+      'trusted': True,
+      'accredited_it_employer': False,
+      'has_divisions': False,
+      'name': 'ИВА',
+      'type': 'company',
+      'description': '<p>Основными направлениями деятельности нашей компании, работающей на рынке с 1998 года, является продажа лекарственных трав (мяты, валерианы, календулы, ромашки, березовых почек, корня женьшеня) и другого растительного сырья. Начиная с 2003 года, «ИВА» успешно развивает направление по обеспечению производителей следующими видами сырья: пищевыми ингредиентами (глютамат натрия, лимонная кислота), специями (базилик, шалфей, перец, гвоздика и т.д.), сушеными фруктами и овощами (томат, лук, морковь, морская капуста и т.д).<br />Продажа лекарственных трав, пищевых ингредиентов и другого растительного сырья производится как оптом, так и в розницу.\xa0</p> <p>WWW.IVA.SU</p>',
+      'site_url': 'http://www.iva.su',
+      'alternate_url': 'https://hh.ru/employer/1807902',
+      'vacancies_url': 'https://api.hh.ru/vacancies?employer_id=1807902',
+      'logo_urls': {
+        '240': 'https://img.hhcdn.ru/employer-logo-round/6761679.jpeg',
+        'original': 'https://img.hhcdn.ru/employer-logo-original-round/6761677.jpeg',
+        '90': 'https://img.hhcdn.ru/employer-logo-round/6761678.jpeg'
+      },
+      'relations': [],
+      'area': {
+        'id': '1',
+        'name': 'Москва',
+        'url': 'https://api.hh.ru/areas/1'
+      },
+      'country_code': 'RU',
+      'industries': [
+        {
+          'id': '27.574',
+          'name': 'Пищевые концентраты (производство)'
+        },
+        {
+          'id': '27.575',
+          'name': 'Пищевые концентраты (продвижение, оптовая торговля)'
+        },
+        {
+          'id': '48.683',
+          'name': 'Фармацевтическая продукция (продвижение, оптовая торговля)'
+        }
+      ],
+      'branded_description': None,
+      'branding': None,
+      'insider_interviews': [],
+      'open_vacancies': 2
+    },
+    "vacancies": [
+      {
+        'id': '127393509',
+        'premium': False,
+        'name': 'Грузчик-комплектовщик',
+        'department': None,
+        'has_test': False,
+        'response_letter_required': False,
+        'area': {
+          'id': '2657',
+          'name': 'Софрино (Московская область)',
+          'url': 'https://api.hh.ru/areas/2657'
+        },
+        'salary': {
+          'from': 90000,
+          'to': 90000,
+          'currency': 'RUR',
+          'gross': True
+        },
+        'salary_range': {
+          'from': 90000,
+          'to': 90000,
+          'currency': 'RUR',
+          'gross': True,
+          'mode': {
+            'id': 'MONTH',
+            'name': 'За\xa0месяц'
+          },
+          'frequency': {
+            'id': 'TWICE_PER_MONTH',
+            'name': 'Два раза в\xa0месяц'
+          }
+        },
+        'type': {
+          'id': 'open',
+          'name': 'Открытая'
+        },
+        'address': {
+          'city': 'городской округ Пушкинский',
+          'street': 'Старое Ярославское шоссе, 52-й километр',
+          'building': 'с1к9',
+          'lat': 56.141207,
+          'lng': 37.985181,
+          'description': None,
+          'raw': 'городской округ Пушкинский, Старое Ярославское шоссе, 52-й километр, с1к9',
+          'metro': None,
+          'metro_stations': [],
+          'id': '13941911'
+        },
+        'response_url': None,
+        'sort_point_distance': None,
+        'published_at': '2025-11-07T09:17:59+0300',
+        'created_at': '2025-11-07T09:17:59+0300',
+        'archived': False,
+        'apply_alternate_url': 'https://hh.ru/applicant/vacancy_response?vacancyId=127393509',
+        'show_logo_in_search': None,
+        'show_contacts': True,
+        'insider_interview': None,
+        'url': 'https://api.hh.ru/vacancies/127393509?host=hh.ru',
+        'alternate_url': 'https://hh.ru/vacancy/127393509',
+        'relations': [],
+        'employer': {
+          'id': '1807902',
+          'name': 'ИВА',
+          'url': 'https://api.hh.ru/employers/1807902',
+          'alternate_url': 'https://hh.ru/employer/1807902',
+          'logo_urls': {
+            'original': 'https://img.hhcdn.ru/employer-logo-original-round/6761677.jpeg',
+            '90': 'https://img.hhcdn.ru/employer-logo-round/6761678.jpeg',
+            '240': 'https://img.hhcdn.ru/employer-logo-round/6761679.jpeg'
+          },
+          'vacancies_url': 'https://api.hh.ru/vacancies?employer_id=1807902',
+          'country_id': 1,
+          'accredited_it_employer': False,
+          'trusted': True
+        },
+        'snippet': {
+          'requirement': 'Желание работать и зарабатывать. Умение работать в команде.',
+          'responsibility': 'Самый крупный трейдер пищевого и растительного сушеного сырья в Северо-Восточном административном округе. Погрузка-разгрузка продукции специй и лекарственных трав...'
+        },
+        'contacts': None,
+        'schedule': {
+          'id': 'fullDay',
+          'name': 'Полный день'
+        },
+        'working_days': [],
+        'working_time_intervals': [],
+        'working_time_modes': [],
+        'accept_temporary': False,
+        'fly_in_fly_out_duration': [],
+        'work_format': [
+          {
+            'id': 'ON_SITE',
+            'name': 'На\xa0месте работодателя'
+          }
+        ],
+        'working_hours': [
+          {
+            'id': 'HOURS_8',
+            'name': '8\xa0часов'
+          }
+        ],
+        'work_schedule_by_days': [
+          {
+            'id': 'FIVE_ON_TWO_OFF',
+            'name': '5/2'
+          }
+        ],
+        'night_shifts': False,
+        'professional_roles': [
+          {
+            'id': '31',
+            'name': 'Грузчик'
+          }
+        ],
+        'accept_incomplete_resumes': False,
+        'experience': {
+          'id': 'noExperience',
+          'name': 'Нет опыта'
+        },
+        'employment': {
+          'id': 'full',
+          'name': 'Полная занятость'
+        },
+        'employment_form': {
+          'id': 'FULL',
+          'name': 'Полная'
+        },
+        'internship': False,
+        'adv_response_url': None,
+        'is_adv_vacancy': False,
+        'adv_context': None
+      },
+      {
+        'id': '120376246',
+        'premium': False,
+        'name': 'Технолог пищевого производства',
+        'department': None,
+        'has_test': False,
+        'response_letter_required': False,
+        'area': {
+          'id': '75',
+          'name': 'Псков',
+          'url': 'https://api.hh.ru/areas/75'
+        },
+        'salary': None,
+        'salary_range': None,
+        'type': {
+          'id': 'open',
+          'name': 'Открытая'
+        },
+        'address': None,
+        'response_url': None,
+        'sort_point_distance': None,
+        'published_at': '2025-10-23T09:25:13+0300',
+        'created_at': '2025-10-23T09:25:13+0300',
+        'archived': False,
+        'apply_alternate_url': 'https://hh.ru/applicant/vacancy_response?vacancyId=120376246',
+        'show_logo_in_search': None,
+        'show_contacts': True,
+        'insider_interview': None,
+        'url': 'https://api.hh.ru/vacancies/120376246?host=hh.ru',
+        'alternate_url': 'https://hh.ru/vacancy/120376246',
+        'relations': [],
+        'employer': {
+          'id': '1807902',
+          'name': 'ИВА',
+          'url': 'https://api.hh.ru/employers/1807902',
+          'alternate_url': 'https://hh.ru/employer/1807902',
+          'logo_urls': {
+            'original': 'https://img.hhcdn.ru/employer-logo-original-round/6761677.jpeg',
+            '90': 'https://img.hhcdn.ru/employer-logo-round/6761678.jpeg',
+            '240': 'https://img.hhcdn.ru/employer-logo-round/6761679.jpeg'
+          },
+          'vacancies_url': 'https://api.hh.ru/vacancies?employer_id=1807902',
+          'country_id': 1,
+          'accredited_it_employer': False,
+          'trusted': True
+        },
+        'snippet': {
+          'requirement': 'Обязателен опыт работы на других пищевых производствах. Обязателен опыт разработки рецептур функциональных смесей и технологических карт. Предпочтителен опыт работы со...',
+          'responsibility': 'Ключевая задача: разработка функциональных смесей для мясной и других видов пищевой промышленности. Включая подбор оборудования, которым необходимо дооснастить действующее пищевое...'
+        },
+        'contacts': None,
+        'schedule': {
+          'id': 'remote',
+          'name': 'Удаленная работа'
+        },
+        'working_days': [],
+        'working_time_intervals': [
+          {
+            'id': 'from_four_to_six_hours_in_a_day',
+            'name': 'Можно сменами по\xa04-6\xa0часов в\xa0день'
+          }
+        ],
+        'working_time_modes': [],
+        'accept_temporary': True,
+        'fly_in_fly_out_duration': [],
+        'work_format': [
+          {
+            'id': 'REMOTE',
+            'name': 'Удалённо'
+          }
+        ],
+        'working_hours': [
+          {
+            'id': 'HOURS_4',
+            'name': '4\xa0часа'
+          },
+          {
+            'id': 'HOURS_8',
+            'name': '8\xa0часов'
+          },
+          {
+            'id': 'FLEXIBLE',
+            'name': 'По\xa0договорённости'
+          }
+        ],
+        'work_schedule_by_days': [
+          {
+            'id': 'FIVE_ON_TWO_OFF',
+            'name': '5/2'
+          },
+          {
+            'id': 'WEEKEND',
+            'name': 'По\xa0выходным'
+          },
+          {
+            'id': 'FLEXIBLE',
+            'name': 'Свободный'
+          }
+        ],
+        'night_shifts': False,
+        'professional_roles': [
+          {
+            'id': '49',
+            'name': 'Технолог'
+          }
+        ],
+        'accept_incomplete_resumes': False,
+        'experience': {
+          'id': 'between1And3',
+          'name': 'От 1 года до 3 лет'
+        },
+        'employment': {
+          'id': 'part',
+          'name': 'Частичная занятость'
+        },
+        'employment_form': {
+          'id': 'PART',
+          'name': 'Частичная'
+        },
+        'internship': False,
+        'adv_response_url': None,
+        'is_adv_vacancy': False,
+        'adv_context': None
+      }
+    ]
+  }
+]
+

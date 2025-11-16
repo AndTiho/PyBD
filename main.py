@@ -1,15 +1,29 @@
-import psycopg2
+import os
 
-conn = psycopg2.connect(host='localhost',database='test',user='postgres',password = 'sudeki270385')
-try:
-    with conn:
-        with conn.cursor() as cur:
+from src.utils import get_hh_data, create_database, save_data_to_database
+from config import config
 
-            cur.execute("INSERT INTO user_account VALUES (%s, %s)", (6, 'Mary'))
-            cur.execute("select * from user_account")
 
-            rows = cur.fetchall()
-            for row in rows:
-                print(row)
-finally:
-    conn.close()
+def main():
+    employer_ids = [
+        "4910000",  # ООО Евразия 2
+        "1807902",  # ООО ИВА 2
+        "9611595",  # ООО Кавара 2
+        "2642865",  # ООО Лаборатория кофе 1
+        "6168988",  # Магазин Pore Over 1
+        "9418321",  # ООО Кабинет Врача 2
+        "5483837",  # ООО НАВИ 1
+        "4483835",  # Обелиск 0
+        "11429244",  # Пакитан 4
+        "10155127",  # ООО Я7 1
+    ]
+
+    params = config()
+
+    data = get_hh_data(employer_ids)
+    create_database('hh_data', params)
+    save_data_to_database(data, 'hh_data', params)
+
+
+if __name__ == "__main__":
+    main()
