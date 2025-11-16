@@ -6,7 +6,8 @@ import psycopg2
 def create_database(database_name: str, params: dict):
     """Создание базы данных и таблиц для сохранения данных о работодателях и вакансиях"""
 
-    conn = psycopg2.connect(dbname="postgres", **params)
+
+    conn = psycopg2.connect(dbname='postgres', **params)
     conn.autocommit = True
     cur = conn.cursor()
 
@@ -100,8 +101,8 @@ def save_data_to_database(data: list[dict[str, Any]], database_name: str, params
 
                 cur.execute(
                     """
-                    INSERT INTO vacancies (vacancy_id, name, salary_from, salary_to, currency, requirement, responsibility)
-                    VALUES (%s, %s, %s, %s, %s, %s, %s)
+                    INSERT INTO vacancies (vacancy_id, name, salary_from, salary_to, currency, requirement, responsibility, employer_id)
+                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
                     """,
                     (
                         vacancy["id"],
@@ -110,7 +111,8 @@ def save_data_to_database(data: list[dict[str, Any]], database_name: str, params
                         salary_to,
                         currency,
                         requirement,
-                        responsibility
+                        responsibility,
+                        employer_id
                     ),
                 )
 
